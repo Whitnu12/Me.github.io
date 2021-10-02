@@ -17,6 +17,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- End -->
 
+    <!-- Typed.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <title>Whitnu Nastain</title>
   </head>
   <body>
@@ -61,7 +64,16 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-sm mb-3">
-            <h1>Hello.</h1>
+            <h1 class="hello"><span class="type"></span></h1>
+            <script>
+              var typed2 = new Typed('.type', {
+                strings: ['Hello.', 'Selamat Datang.', 'Om Swastyastu.'],
+                typeSpeed: 50,
+                backSpeed: 0,
+                fadeOut: true,
+                loop: true,
+              });
+            </script>
           </div>
         </div>
         <div class="row justify-content-center text-center fs-6">
